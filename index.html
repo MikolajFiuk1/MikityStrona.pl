@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Minecraft Xbox 360</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <title>Minecraft Xbox 360 Edition</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -13,75 +13,80 @@
     }
 
     body {
-      font-family: 'Press Start 2P', cursive;
-      background: linear-gradient(120deg, #1b1b1b, #2a2a2a);
-      color: #33ff33;
+      font-family: 'Rubik', sans-serif;
+      background: url('https://i.imgur.com/oYQxWgN.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      padding: 20px;
-      overflow-x: hidden;
+      backdrop-filter: blur(5px);
+    }
+
+    .content {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0, 255, 100, 0.4);
+      text-align: center;
+      animation: fadeIn 1s ease-out;
+      max-width: 600px;
+      margin: 20px;
     }
 
     h1 {
-      font-size: 2rem;
-      text-shadow: 0 0 10px #33ff33;
-      animation: fadeIn 1s ease-out;
-      margin-bottom: 20px;
-    }
-
-    .box {
-      background: #111;
-      border: 3px solid #33ff33;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 20px #33ff33;
-      max-width: 800px;
-      animation: slideUp 1s ease-out;
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      color: #00ffcc;
+      text-shadow: 0 0 10px #00ffcc;
     }
 
     p {
-      line-height: 1.5;
-      font-size: 0.8rem;
-      margin-bottom: 20px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 25px;
     }
 
     .btn {
-      background: #33ff33;
-      color: black;
-      border: none;
-      padding: 10px 20px;
-      font-size: 0.8rem;
-      cursor: pointer;
-      border-radius: 5px;
+      display: inline-block;
+      background: #00ffcc;
+      color: #000;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: bold;
       text-decoration: none;
-      transition: transform 0.3s, box-shadow 0.3s;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px #00ffcc;
+      margin: 10px;
     }
 
     .btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 10px #33ff33;
+      transform: scale(1.05);
+      background: #00ffaa;
+      box-shadow: 0 0 25px #00ffcc;
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes slideUp {
-      from { opacity: 0; transform: translateY(50px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
     }
   </style>
 </head>
 <body>
-  <h1>Minecraft Xbox 360 Edition</h1>
-  <div class="box">
-    <p>To była jedna z najpiękniejszych wersji Minecrafta. Z prostym menu, cudownymi minigrami i grafiką, która wywoływała uśmiech.</p>
-    <p>Wersja Xbox 360 miała unikalny klimat, którego już nie ma. Pamiętasz te czasy? Witaj z powrotem!</p>
-    <a href="#" class="btn">Zobacz gameplay</a>
+  <div class="content">
+    <h1>Minecraft Xbox 360 Edition</h1>
+    <p>Najbardziej nostalgiczna wersja Minecrafta. Ikoniczne menu, wyjątkowy wygląd, minigry i uczucie powrotu do dzieciństwa. To był prawdziwy Minecraft.</p>
+    
+    <a href="https://www.youtube.com/results?search_query=minecraft+xbox+360+gameplay" class="btn" target="_blank">
+      ▶️ Zobacz gameplay
+    </a>
+    
+    <a href="https://drive.google.com/uc?export=download&id=1jWha7OoymjEGoRY_ADeY35YAN5mg0kpA" class="btn" target="_blank">
+      📥 Pobierz plik
+    </a>
   </div>
 </body>
 </html>
